@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'ethereum:accounts',
-  summary: 'Provides and updates the ethereum accounts in the Accounts collection',
+  name: 'nekonium:accounts',
+  summary: 'Provides and updates the nekonium accounts in the Accounts collection',
   version: '0.4.0',
-  git: 'http://github.com/ethereum/meteor-package-accounts'
+  git: 'http://github.com/nekonium/meteor-package-accounts'
 });
 
 Package.onUse(function(api) {
@@ -11,7 +11,7 @@ Package.onUse(function(api) {
   api.use('mongo', ['client', 'server']);
 
   api.use('frozeman:persistent-minimongo@0.1.8', 'client');
-  api.use('ethereum:web3@0.15.1', ['client', 'server']);
+  api.use('nekonium:web3@0.20.2', ['client', 'server']);
 
   api.export(['EthAccounts'], ['client', 'server']);
 

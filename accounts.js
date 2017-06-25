@@ -1,6 +1,6 @@
 /**
 
-@module Ethereum:accounts
+@module Nekonium:accounts
 */
 
 
