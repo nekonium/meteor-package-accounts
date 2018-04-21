@@ -27,6 +27,7 @@ Updates the accounts balances, by watching for new blocks and checking the balan
 @method _watchBalance
 */
 EthAccounts._watchBalance = function(){
+    var web3=nekonium.web3;
     var _this = this;
 
     if(this.blockSubscription) {
@@ -48,6 +49,8 @@ Updates the accounts balances.
 @method _updateBalance
 */
 EthAccounts._updateBalance = function(){
+    var web3=nekonium.web3;
+    
     var _this = this;
 
     _.each(EthAccounts.find({}).fetch(), function(account){
@@ -74,6 +77,7 @@ if its finds a difference between the accounts in the collection and the account
 @method _addAccounts
 */
 EthAccounts._addAccounts = function(){
+    var web3=nekonium.web3;
     var _this = this;
 
     // UPDATE normal accounts on start
@@ -268,6 +272,7 @@ Starts fetching and watching the accounts
 @method init
 */
 EthAccounts.init = function() {
+    var web3=nekonium.web3;    
     var _this = this;
 
     if(typeof web3 === 'undefined') {
