@@ -11,7 +11,7 @@ The accounts collection, with some ethereum additions.
 @class EthAccounts
 @constructor
 */
-var collection = new Mongo.Collection('ethereum_accounts', {connection: null});
+var collection = new Mongo.Collection('nekonium_accounts', {connection: null});
 EthAccounts = _.clone(collection);
 EthAccounts._collection = collection;
 

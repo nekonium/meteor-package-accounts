@@ -1,3 +1,12 @@
+# Nekonium:Ethereum accounts
+Forked from Ethereum account.
+
+Difference from Ethereum accounts.
+
+- Update web3 library to nekonium web3.
+- Change the namespace of web3 to nekonium/web3. (0.4.1)
+- Change Collection name to nekonium_accounts (0.4.2)
+
 # Ethereum accounts
 
 Provides you with an `EthAccounts` collection, where balances are automatically updated.
